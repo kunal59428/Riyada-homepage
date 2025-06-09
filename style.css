@@ -123,14 +123,21 @@ nav a:hover {
 .explore {
   background: #e0b13c;
   color: #fff;
-  border: none;
+  border: 2px solid #e0b13c;
   font-size: 1.1em;
   font-weight: 600;
   padding: 14px 32px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.3s ease;
 }
+
+.explore:hover {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #e0b13c;
+}
+
 .leadership {
   background: transparent;
   color: #fff;
@@ -141,6 +148,11 @@ nav a:hover {
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+}
+.leadership:hover {
+  background: #e0b13c;
+  color: #fff;
+  border:none;
 }
 .search-categories {
   width: 100%;
