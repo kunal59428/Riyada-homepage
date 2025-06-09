@@ -73,6 +73,11 @@ nav a {
   border-radius: 4px;
 }
 
+nav a.active {
+  color: #000;
+  background-color: #e0b13c;
+}
+
 nav a:hover {
   color: #000;
   background-color: #e0b13c;
@@ -189,6 +194,13 @@ nav a:hover {
   gap: 10%;
   height: 100px;
 }
+
+.categories a {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
 .categories span {
   flex: 1;
   text-align: center;
@@ -202,12 +214,12 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
   border-radius: 5px;
-  justify-content: center;
+  height: 100px;
 }
 
 .categories span::before {
@@ -460,7 +472,7 @@ nav a:hover {
 }
 
 .card .img img {
-  width: 280px;
+  width: 270px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
