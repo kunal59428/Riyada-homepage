@@ -68,6 +68,14 @@ nav a {
   margin-left: 24px;
   text-decoration: none;
   font-size: 1em;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #e0b13c;
 }
 .hero {
   align-items: center;
