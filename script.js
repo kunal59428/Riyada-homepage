@@ -86,3 +86,42 @@ const wrapper = document.querySelector(".wrapper");
     carousel.addEventListener("scroll", infiniteScroll);
     wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
     wrapper.addEventListener("mouseleave", autoPlay);
+
+
+    
+// Counter animation function
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16); // 60fps
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target + '+';
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start) + '+';
+        }
+    }, 16);
+}
+
+// Initialize counters when element is in viewport
+function initCounters() {
+    const impactNumbers = document.querySelectorAll('.impact-number');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.textContent);
+                animateCounter(entry.target, target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    impactNumbers.forEach(number => {
+        observer.observe(number);
+    });
+}
+
+// Call initCounters when DOM is loaded
+document.addEventListener('DOMContentLoaded', initCounters);
