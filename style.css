@@ -204,7 +204,6 @@ nav a:hover {
   width: 100%;
   margin-top: 0;
   gap: 10%;
-  height: 100px;
 }
 
 .categories a {
@@ -247,7 +246,7 @@ nav a:hover {
 }
 
 .categories span:hover {
-  color: #000;
+  color: #fff;
 }
 
 .categories span:hover::before {
@@ -410,13 +409,12 @@ nav a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 50px;
-  width: 50px;
-  color: #fff;
+  background: transparent;
+  color: #e0b13c;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  font-size: 1.25rem;
+  font-size: 40px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
   cursor: pointer;
   transition: transform 0.1s ease;
@@ -440,7 +438,7 @@ nav a:hover {
 ;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 4));
-  gap: 10px;
+  gap: 15px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
