@@ -187,6 +187,7 @@ nav a:hover {
   width: 100%;
   margin-top: 0;
   gap: 10%;
+  height: 100px;
 }
 .categories span {
   flex: 1;
@@ -202,7 +203,33 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  justify-content: center;
 }
+
+.categories span::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e0b13c;
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.categories span:hover {
+  color: #000;
+}
+
+.categories span:hover::before {
+  top: 0;
+}
+
 .hero-image {
   width: 50%;
   height: 100%;
