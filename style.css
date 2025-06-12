@@ -284,11 +284,10 @@ h2.animate {
   border: none;
 }
 .icon-top-right {
-      position: fixed;
-      top: 120px;
+      position: absolute;
+      top: 40px;
       right: 50px;
       z-index: 9999;
-      padding: 10px;
     }
 
     .icon-top-right img {
@@ -297,6 +296,7 @@ h2.animate {
       object-fit: contain;
     }
 
+    
 
 
 /* Search */
