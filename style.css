@@ -817,6 +817,9 @@ section.search-section {
   .nav-container .logo {
     justify-content: normal;
   }
+      .nav-container {
+        gap: 35%;
+    }
   .hero {
     min-height: 300px;
   }
@@ -867,7 +870,7 @@ section.search-section {
   }
 
   .categories {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
     gap: 8px;
     width: 100%;
   }
