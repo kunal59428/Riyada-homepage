@@ -116,6 +116,11 @@ nav a:hover {
   color: #000;
   background-color: #e0b13c;
 }
+/* Keep hero slider layout consistent in Arabic */
+body[dir="rtl"] .slider .slides {
+  direction: ltr;
+}
+
 .lang-switcher {
   display: flex;
   gap: 8px;
