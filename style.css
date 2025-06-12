@@ -922,15 +922,15 @@ section.search-section {
   }
   .carousel {
     grid-auto-columns: 100%;
-    gap: 25px;
-    width: 70%;
+    gap: 25%;
+    width: 60%;
   }
 
   .wrapper i#left {
-    left: 10px;
+    left: 25px;
   }
 
   .wrapper i#right {
-    right: 10px;
+    right: 25px;
   }
 }
