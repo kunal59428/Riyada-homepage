@@ -923,7 +923,7 @@ section.search-section {
   .carousel {
     grid-auto-columns: 100%;
     gap: 25%;
-    width: 60%;
+    width: 70%;
   }
 
   .wrapper i#left {
