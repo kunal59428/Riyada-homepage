@@ -510,8 +510,6 @@ section.search-section {
   letter-spacing: 0.5px;
 }
 
-
-
 /* testimonial-section */
 
 .wrapper {
@@ -604,7 +602,7 @@ section.search-section {
 }
 
 .card .img img {
-  width: 270px;
+  width: 310px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
@@ -619,9 +617,9 @@ section.search-section {
 }
 
 .card span {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #6a6d78;
-  /* text-align: center; */
+  text-align: justify;
 }
 
 /* Hamburger styles */
@@ -657,25 +655,22 @@ section.search-section {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-
-
-
 @media (max-width: 900px) {
   .lang-switcher {
     display: none;
-}
-.nav-container {
+  }
+  .nav-container {
     justify-content: space-around;
     gap: 50%;
-}
-.nav-container .logo {
+  }
+  .nav-container .logo {
     justify-content: flex-start;
-}
-.slider {
+  }
+  .slider {
     height: 100%;
-}
+  }
 
-.slide img {
+  .slide img {
     position: relative;
     right: -25%;
   }
@@ -697,7 +692,7 @@ section.search-section {
   }
   section.search-section {
     padding: 0px 4%;
-}
+  }
   .search-categories {
     margin-top: 16px;
     padding-bottom: 20px;
@@ -720,7 +715,7 @@ section.search-section {
 
   .categories {
     display: grid;
-grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* flex-direction: column; */
     gap: 8px;
     width: 100%;
@@ -730,9 +725,10 @@ grid-template-columns: repeat(2, 1fr);
     font-size: 18px;
     padding: 8px 0 0 0;
   }
-  .impact-left, .impact-right {
-        padding: 20px 0;
-    }
+  .impact-left,
+  .impact-right {
+    padding: 20px 0;
+  }
   .impact-left h2 {
     font-size: 56px;
   }
@@ -746,11 +742,11 @@ grid-template-columns: repeat(2, 1fr);
   .impact-left img {
     height: 300px;
     object-position: 20% 20%;
-}
-.impact-icon img {
+  }
+  .impact-icon img {
     height: 50px;
     width: 35px;
-}
+  }
   .impact-label {
     font-size: 36px;
   }
@@ -759,20 +755,21 @@ grid-template-columns: repeat(2, 1fr);
   }
   .wrapper-heading .impact-label {
     margin: 0px 5px;
-}
- span.impact-icon.w-icon {
+  }
+  span.impact-icon.w-icon {
     display: none;
-}
-.carousel .card {
+  }
+  .carousel .card {
     align-items: center;
-    width: 100%;
+  }
+
+  .carousel {
+    grid-auto-columns: calc(100% / 2);
+    gap: 10%;
+    width: 80%;
   }
   .card .img img {
-    width: 290px;
-  }
-   .carousel {
-    grid-auto-columns: 100%;
-    gap: 25px;
+    width: 260px;
   }
 
   .wrapper i#left {
@@ -783,9 +780,9 @@ grid-template-columns: repeat(2, 1fr);
     right: 10px;
   }
 
-  .carousel {
+  /* .carousel {
     grid-auto-columns: calc((100% / 2));
-  }
+  } */
 
   /* Show hamburger and hide nav on mobile/tablet */
   .hamburger {
@@ -808,10 +805,6 @@ grid-template-columns: repeat(2, 1fr);
     display: flex;
   }
 }
-
-
-
-
 
 /* Responsive For mobile view */
 
@@ -847,7 +840,7 @@ grid-template-columns: repeat(2, 1fr);
   }
   section.search-section {
     padding: 0px 4%;
-}
+  }
   .search-categories {
     margin-top: 16px;
     padding-bottom: 20px;
@@ -878,9 +871,10 @@ grid-template-columns: repeat(2, 1fr);
     font-size: 18px;
     padding: 8px 0 0 0;
   }
-  .impact-left, .impact-right {
-        padding: 20px 0;
-    }
+  .impact-left,
+  .impact-right {
+    padding: 20px 0;
+  }
   .impact-left h2 {
     font-size: 32px;
   }
@@ -894,11 +888,11 @@ grid-template-columns: repeat(2, 1fr);
   .impact-left img {
     height: 300px;
     object-position: 20% 20%;
-}
-.impact-icon img {
+  }
+  .impact-icon img {
     height: 50px;
     width: 35px;
-}
+  }
   .impact-label {
     font-size: 18px;
   }
@@ -907,10 +901,10 @@ grid-template-columns: repeat(2, 1fr);
   }
   span.impact-icon.w-icon {
     display: none;
-}
-.wrapper-heading .impact-label {
+  }
+  .wrapper-heading .impact-label {
     margin: 0px 5px;
-}
+  }
   .carousel .card {
     align-items: center;
     width: 100%;
@@ -918,9 +912,10 @@ grid-template-columns: repeat(2, 1fr);
   .card .img img {
     width: 290px;
   }
-   .carousel {
+  .carousel {
     grid-auto-columns: 100%;
     gap: 25px;
+    width: 70%;
   }
 
   .wrapper i#left {
