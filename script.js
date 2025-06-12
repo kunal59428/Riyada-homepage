@@ -48,10 +48,10 @@ hamburger.addEventListener('click', () => {
   });
 
   // Auto Slide
-  setInterval(() => {
-    index = (index + 1) % slides.length;
-    goToSlide(index);
-  }, 7000);
+  // setInterval(() => {
+  //   index = (index + 1) % slides.length;
+  //   goToSlide(index);
+  // }, 7000);
 
   // Animate first slide on load
   window.addEventListener("load", () => {
