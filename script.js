@@ -249,16 +249,16 @@ document.addEventListener('DOMContentLoaded', initCounters);
       $control.addEventListener("click", controlClickHandler);
     });
 
-    function setAutoslidingTO() {
-      window.clearTimeout(autoSlidingTO);
-      var delay = +options.autoSlidingDelay || autoSlidingDelay;
-      curSlide++;
-      if (curSlide > numOfSlides) curSlide = 1;
+    // function setAutoslidingTO() {
+    //   window.clearTimeout(autoSlidingTO);
+    //   var delay = +options.autoSlidingDelay || autoSlidingDelay;
+    //   curSlide++;
+    //   if (curSlide > numOfSlides) curSlide = 1;
 
-      autoSlidingTO = setTimeout(function() {
-        performSliding(curSlide);
-      }, delay);
-    };
+    //   autoSlidingTO = setTimeout(function() {
+    //     performSliding(curSlide);
+    //   }, delay);
+    // };
 
     if (options.autoSliding || +options.autoSlidingDelay > 0) {
       if (options.autoSliding === false) return;
